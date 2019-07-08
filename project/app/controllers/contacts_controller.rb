@@ -18,6 +18,9 @@ class ContactsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   private
 
   def set_contact
