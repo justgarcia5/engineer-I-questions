@@ -1,15 +1,81 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.new-contact-div {
+  padding-top: 60px;
+}
+
+.new-contact-card {
+  border: 1px rgb(196, 200, 199) solid;
+  width: 360px;
+  height: 260px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(196, 200, 199);
+  padding-top: 80px;
+}
+
+.new-contact-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.form {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field-label {
+  font-size: 16px;
+  padding: 7px;
+}
+
+.form-field .w-input {
+  font-size: 15px;
+  padding: 4px;
+}
+
+.error-div {
+  text-align: center;
+}
+
+.errors {
+  width: 160px;
+  margin: auto;
+  padding-bottom: 18px;
+
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.btn-primary {
+  margin: 12px;
+  background-color: green;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 6px
+}
+
+.contact-div {
+  display: flex;
+  justify-content: center
+}
+
+.contact-card {
+  border: 1px black solid;
+  width: 160px;
+  height: 160px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.add-contact-link {
+  text-align: center
+}
+
+.contacts-title {
+  text-align: center;
+}
