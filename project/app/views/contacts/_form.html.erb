@@ -1,0 +1,28 @@
+<div>
+  <div>
+    <%= form_for @contact do |f| %>
+      <% if @contact.errors.any? %>
+        <ul>
+        <% @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      <% end %>
+
+      <%= f.label :name, 'Name: ', class: 'form-field-label' %>
+      <%= f.text_field :name, placeholder: 'Enter name', class: 'form-field w-input' %>
+      <br/>
+
+      <%= f.label :phone, 'Phone: ', class: 'form-field-label' %>
+      <%= f.text_field :phone, placeholder: 'Enter phone number', class: 'form-field w-input' %>
+      <br/>
+
+      <%= f.label :email, 'Email: ', class: 'form-field-label' %>
+      <%= f.text_field :email, placeholder: 'Enter email ', class: 'form-field w-input' %>
+      <br/>
+
+      <%= f.submit 'Submit', class: 'btn-primary w-button' %>
+      <%= link_to 'Back', contacts_path %>
+    <% end %>
+  </div>
+</div>
