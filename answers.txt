@@ -13,6 +13,9 @@ const removeDuplicates = (arr) => {
 Using server side filtering is usually faster by minimizing the amount of data sent over a network and depending on how much data there is and the bandwidth of the network, server side filtering will allow for a better UX and in comparision to client side filtering where all of the data will be sent to client and the client will have to do all of the filtering.
 
 3. What is jQuery and why would you choose to use it, or choose not to use it?
+
+jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. JQuery significantly simplifies JavaScript programming. I would use JQuery when required to support old browsers with and older set of standards and also use it to simplify many lines of JS code. I would NOT use JQuery when trying to minimize file size and to eliminate the need to rely on third partly tools.
+
 4. What's wrong with this snippet of code?
 	$name = $_POST['name'];
 	$query = 'insert into friends (name) values ("' . $name . '")';
