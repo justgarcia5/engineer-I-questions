@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-   before_action :set_contact, only: [:destroy, :show ]
+   before_action :set_contact, only: [:destroy, :show, :update, :edit ]
 
    def index
     @contacts = Contact.all
@@ -22,6 +22,14 @@ class ContactsController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
+    if @contact.update(contact_params)
+      redirect_to contacts_path
+    else
+      render :edit
+    end
   end
 
   private
