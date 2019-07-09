@@ -1,11 +1,17 @@
 <div>
   <h1 class="contacts-title">Contacts</h1>
-  <div class="add-contact-link">
-    <%= link_to 'Add Contact', new_contact_path %>
-  </div>
-  <div  class="contact-div">
-    <% @contacts.each do |contact| %>
-      <%= render partial: "contact", locals: { contact: contact } %>
-    <% end %>
+  <div class="contact-div">
+    <table style="width: 80%">
+      <tr class="table-head">
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <% @contacts.each do |contact| %>
+        <%= render partial: "contact", locals: { contact: contact } %>
+      <% end %>
+    </table>
   </div>
 </div>
