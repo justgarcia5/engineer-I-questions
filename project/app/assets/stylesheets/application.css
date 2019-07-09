@@ -142,3 +142,7 @@
 .back-link:hover {
   color: rgb(4, 26, 153)
 }
+
+.delete-link:hover {
+  color: black;
+}
