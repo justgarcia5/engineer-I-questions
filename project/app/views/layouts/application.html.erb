@@ -10,12 +10,22 @@
   </head>
 
   <div class="nav-bar">
-    <%= link_to 'Contacts', contacts_path, class: "add-link" %>
-    <%= link_to 'Add Contact', new_contact_path, class: "add-link" %>
-  </div>
-  <hr/>
+    <%= form_tag(search_page_path, method: :get, class: "input-group") do %>
+        <%= search_field_tag :search, params[:search], placeholder: "Search", class: "search-input" %>
+        <%= button_tag "Search", :name => nil, class: "search-button" %>
+        <%= link_to 'Contacts', contacts_path, class: "add-link" %>
+        <%= link_to 'Add Contact', new_contact_path, class: "add-link" %>
+      <% end %>
+    </div>
+    <hr/>
 
   <body>
-    <%= yield %>
-  </body>
+
+  <%- flash.each do |name, message| %>
+    <p class="alert"><%= "#{message}" %></p>
+  <% end %>
+
+<%= yield %>
+
+</body>
 </html>

@@ -1,7 +1,16 @@
 class ContactsController < ApplicationController
-   before_action :set_contact, only: [:destroy, :show, :update, :edit ]
+  before_action :set_contact, only: [ :destroy, :update, :edit ]
 
-   def index
+  def search
+    if params[:search].blank?
+      redirect_to(root_path, alert: "Empty field!")
+    else
+      @parameter = params[:search].downcase
+      @results = Contact.all.where("lower(name) LIKE :search", "%#{@parameter}%")
+    end
+  end
+
+  def index
     @contacts = Contact.all
   end
 
@@ -12,6 +21,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.create(contact_params)
     if @contact.save
+      flash[:success] = "Contact: #{@contact.name} was successfully created!"
       redirect_to contacts_path
     else
       render :new

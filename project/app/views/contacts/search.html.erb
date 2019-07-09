@@ -1,0 +1,25 @@
+<div>
+  <h1 class="contacts-title">Search Results</h1>
+  <div class="contact-div">
+    <table style="width: 80%">
+      <tr class="table-head">
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <% @results.each do |result| %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.phone %></td>
+          <td><%= result.email %></td>
+          <td><%= button_to "Edit", edit_contact_path(contact), :method => :get, class: "edit-button" %></td>
+          <td><%= link_to contact_path(contact), method: :delete, data: { confirm: "Are you sure you would like to delete Contact: #{contact.name}" }, :class => "no-link", :id => "delete-contact-#{contact.id}"  do %>
+            <%= image_tag "icon-delete.svg" %>
+          <% end %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
