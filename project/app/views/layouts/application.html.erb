@@ -9,6 +9,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <div class="nav-bar">
+    <%= link_to 'Add Contact', new_contact_path, class: "add-link" %>
+  </div>
+  <hr/>
+
   <body>
     <%= yield %>
   </body>

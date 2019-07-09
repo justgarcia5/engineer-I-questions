@@ -59,9 +59,15 @@
   padding: 6px
 }
 
-.contact-div {
-  display: flex;
-  justify-content: center
+.contact-div table {
+  margin: 18px auto;
+  border-collapse: collapse;
+}
+
+.contact-div th, td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 .contact-card {
@@ -91,4 +97,20 @@
 
 .edit-contact-div {
   padding-top: 60px;
+}
+
+.add-link {
+  text-decoration: none;
+  color: black;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.add-link:hover {
+  color: green;
+}
+
+.nav-bar {
+  text-align: right;
+  margin: 30px auto;
 }
