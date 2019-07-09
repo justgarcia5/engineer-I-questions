@@ -147,3 +147,35 @@
 .delete-link:hover {
   color: black;
 }
+
+.input-group {
+  text-align: right;
+}
+
+.search-input {
+  width: 200px;
+}
+
+.search-button {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(148, 248, 148);
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  background-color: green;
+  color: white;
+}
+
+.alert {
+  padding-top: 18px;
+  width: 400px;
+  margin: auto;
+  padding-bottom: 18px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  padding-left: 14px;
+}
