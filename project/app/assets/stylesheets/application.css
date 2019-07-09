@@ -79,3 +79,16 @@
 .contacts-title {
   text-align: center;
 }
+
+.no-link {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-title {
+  text-align: center;
+}
+
+.edit-contact-div {
+  padding-top: 60px;
+}
