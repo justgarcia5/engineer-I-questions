@@ -9,6 +9,9 @@ const removeDuplicates = (arr) => {
 }
 
 2. Why use server side filtering instead of client side filtering?
+
+Using server side filtering is usually faster by minimizing the amount of data sent over a network and depending on how much data there is and the bandwidth of the network, server side filtering will allow for a better UX and in comparision to client side filtering where all of the data will be sent to client and the client will have to do all of the filtering.
+
 3. What is jQuery and why would you choose to use it, or choose not to use it?
 4. What's wrong with this snippet of code?
 	$name = $_POST['name'];
