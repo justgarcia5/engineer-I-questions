@@ -5,8 +5,8 @@ class ContactsController < ApplicationController
     if params[:search].blank?
       redirect_to(root_path, alert: "Empty field!")
     else
-      @parameter = params[:search].downcase
-      @results = Contact.all.where("lower(name) LIKE :search", "%#{@parameter}%")
+      @contacts = Contact.search(params)
+
     end
   end
 
