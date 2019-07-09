@@ -1,6 +1,13 @@
 ## Questions
 
-1. Write a function to remove duplicate values from an array.  (Assume all values of the array are simple, lowercase strings) 
+1. Write a function to remove duplicate values from an array.  (Assume all values of the array are simple, lowercase strings)
+
+const removeDuplicates = (arr) => {
+  return arr.filter((item, index) => {
+    return arr.indexOf(item) >= index;
+  })
+}
+
 2. Why use server side filtering instead of client side filtering?
 3. What is jQuery and why would you choose to use it, or choose not to use it?
 4. What's wrong with this snippet of code?
