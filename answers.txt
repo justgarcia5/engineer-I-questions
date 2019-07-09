@@ -20,3 +20,8 @@ jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and 
 	$name = $_POST['name'];
 	$query = 'insert into friends (name) values ("' . $name . '")';
 	mysqli_query($connection, $query);
+
+
+The second line of code needs to be changed to:
+	$query = INSERT INTO friends (name) VALUES ($name);
+
