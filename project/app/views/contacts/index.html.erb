@@ -1,14 +1,15 @@
-<h1>Contacts</h1>
+<h1 class="contacts-title">Contacts</h1>
 
-<div>
-  <%= link_to 'Add Contact', new_contact_path, class: 'btn-primary w-button' %>
+<div class="add-contact-link">
+  <%= link_to 'Add Contact', new_contact_path %>
 </div>
 
-<div>
+<div  class="contact-div">
   <% @contacts.each do |contact| %>
-    <%= contact.name %>
-    <%= contact.phone %>
-    <%= contact.email %>
-    <br/>
+    <div class="contact-card">
+      <%= contact.name %><br/>
+      <%= contact.phone %><br/>
+      <%= contact.email %>
+    </div>
   <% end %>
 </div>
