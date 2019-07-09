@@ -40,6 +40,7 @@ class ContactsController < ApplicationController
 
   def update
     if @contact.update(contact_params)
+      flash[:notice] = "Contact: #{@contact.name} was successfully updated"
       redirect_to contacts_path
     else
       render :edit

@@ -170,12 +170,14 @@
 }
 
 .alert {
+  border: 1px solid rgb(233, 210, 181);
+  background-color: rgb(233, 210, 181);
+  color: brown;
   padding-top: 18px;
-  width: 400px;
+  width: 380px;
   margin: auto;
   padding-bottom: 18px;
   text-align: center;
   font-size: 18px;
   border-radius: 4px;
-  padding-left: 14px;
 }
