@@ -19,6 +19,10 @@ class ContactsController < ApplicationController
   end
 
   def destroy
+    if @contact.destroy
+      flash[:notice] = "Contact: #{@contact.name} was successfully deleted"
+      redirect_to contacts_path
+    end
   end
 
   def edit

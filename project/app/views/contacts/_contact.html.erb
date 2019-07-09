@@ -1,0 +1,9 @@
+<div class="contact-card">
+  <%= contact.name %><br/>
+  <%= contact.phone %><br/>
+  <%= contact.email %><br/>
+  <%= link_to "Edit", edit_contact_path(contact), class: "no-link" %>
+  <%= link_to contact_path(contact), method: :delete, data: { confirm: "Are you sure you would like to delete Contact: #{contact.name}" }, :class => "no-link", :id => "delete-contact-#{contact.id}"  do %>
+    <%= image_tag "icon-delete.svg" %>
+  <% end %>
+</div>
