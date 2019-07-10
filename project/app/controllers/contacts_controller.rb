@@ -4,6 +4,8 @@ class ContactsController < ApplicationController
   def search
     if params[:search].blank?
       redirect_to(root_path, alert: "Empty field!")
+    # elsif !params[:search].blank?
+    #   redirect_to(root_path, alert: "Not found")
     else
       @contacts = Contact.search(params)
    end
