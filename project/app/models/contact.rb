@@ -10,4 +10,6 @@ class Contact < ApplicationRecord
 
   scope :find_name, ->(search) { where("name LIKE :search", search: "%#{search}%") }
 
+  belongs_to :user
+
 end

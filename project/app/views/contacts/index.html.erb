@@ -1,5 +1,5 @@
 <div>
-  <h1 class="contacts-title">Contacts</h1>
+  <h1 class="contacts-title"> Contacts</h1>
   <div class="contact-div">
     <table style="width: 80%">
       <tr class="table-head">
@@ -10,7 +10,9 @@
         <th></th>
       </tr>
       <% @contacts.each do |contact| %>
-        <%= render partial: "contact", locals: { contact: contact } %>
+        <% if current_user.id == contact.user_id %>
+          <%= render partial: "contact", locals: { contact: contact } %>
+        <% end %>
       <% end %>
     </table>
   </div>
