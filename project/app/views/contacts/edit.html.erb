@@ -1,4 +1,8 @@
 <div class="edit-contact-div">
-  <h2 class="edit-title">Edit Contact</h2>
-  <%= render "form" %>
+  <h1 class="edit-title">Edit Contact</h1>
+  <% if current_user.id == @contact.user_id %>
+    <%= render "form" %>
+  <% else %>
+    <h1 style="text-align: center">Not found!</h1>
+  <% end %>
 </div>
