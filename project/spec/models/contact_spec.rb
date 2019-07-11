@@ -4,7 +4,8 @@ require 'rails_helper'
 
 RSpec.describe Contact, type: :model do
   describe 'contact' do
-    let(:contact) { build(:contact) }
+    let(:user) { create_logged_in_user }
+    let(:contact) { build(:contact, user: user) }
     context 'when all attributes supplied' do
       it 'contact' do
         expect(contact).to be_valid
