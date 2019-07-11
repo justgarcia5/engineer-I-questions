@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get '/search' => 'contacts#search', :as => 'search_page'
   resources :contacts
+  get '/search' => 'contacts#search', :as => 'search_page'
 
   root to: 'contacts#index'
 end
