@@ -107,18 +107,18 @@
   padding: 20px;
 }
 
-.add-link {
+.navbar-link {
   text-decoration: none;
   color: black;
   padding-right: 10px;
   font-size: 14px;
 }
 
-.add-link:hover {
+.navbar-link:hover {
   color: green;
 }
 
-.nav-bar {
+.navbar {
   text-align: right;
   margin: 26px auto;
   width: 90%;

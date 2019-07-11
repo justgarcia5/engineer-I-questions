@@ -1,11 +1,10 @@
 class ContactsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_contact, only: [ :destroy, :update, :edit ]
 
   def search
     if params[:search].blank?
       redirect_to(root_path, alert: "Empty field!")
-    # elsif !params[:search].blank?
-    #   redirect_to(root_path, alert: "Not found")
     else
       @contacts = Contact.search(params)
    end
