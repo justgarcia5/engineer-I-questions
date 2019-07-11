@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.create(contact_params)
+    @contact = current_user.contacts.build(contact_params)
     if @contact.save
       flash[:success] = "Contact: #{@contact.name} was successfully created!"
       redirect_to contacts_path
