@@ -43,7 +43,7 @@ feature 'User creates a new contact' do
     @contact = create(:contact)
     visit contacts_path(@contact)
     expect { click_link '', :id => "delete-contact-#{@contact.id}" }.to change(Contact, :count).by(-1)
-     expect(page).to_not have_content("testa@testa.com")
+    expect(page).to_not have_content("testa@testa.com")
   end
   scenario "display flash message confirming contact deletion" do
     @contact = create(:contact)
