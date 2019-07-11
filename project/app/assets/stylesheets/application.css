@@ -85,7 +85,7 @@
 }
 
 .table-head {
-  background-color: green;
+  background-color: green!important ;
   color: white;
 }
 
@@ -121,7 +121,7 @@
 .nav-bar {
   text-align: right;
   margin: 26px auto;
-  width: 80%;
+  width: 90%;
 }
 
 .edit-button {
@@ -196,3 +196,7 @@
 * {
   font-family: "Lucida Grande";
  }
+
+tr:nth-child(odd){
+  background-color: lightgrey;
+}
