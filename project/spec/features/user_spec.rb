@@ -16,6 +16,6 @@ feature 'User can log out' do
   scenario 'clicks logout' do
     visit contacts_path(user)
     click_link 'Logout'
-    expect(page).to have_content('Home')
+    expect(page).to have_content('Welcome to FriendBook!')
   end
 end

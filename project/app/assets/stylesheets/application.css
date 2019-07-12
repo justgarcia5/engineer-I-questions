@@ -13,33 +13,13 @@
 .new-contact-title {
   text-align: center;
   padding: 20px;
-}
-
-.form {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.form-field {
-  margin-bottom: 20px;
-    text-align: left
-}
-
-.form-field-label {
-  font-size: 14px;
-  padding: 7px;
-}
-
-.form-field .w-input {
-  font-size: 14px;
-  padding: 4px;
-  border-radius: 4px;
-  width: 200px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
 }
 
 .errors-div {
  text-align: center;
- margin-bottom: 18px;
+ margin: 20px;
 }
 
 .errors {
@@ -60,7 +40,6 @@
 }
 
 .btn-primary {
-  margin: 12px;
   background-color: rgb(82, 211, 82);
   border-radius: 4px;
   font-size: 14px;
@@ -69,6 +48,19 @@
 
 .btn-primary:hover {
   background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: rgb(248, 115, 115);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 13px;
+}
+
+.btn-secondary:hover {
+  background-color: red;
   color: white;
   cursor: pointer;
 }
@@ -95,6 +87,8 @@
 
 .contacts-title {
   text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
 }
 
 .no-link {
@@ -105,6 +99,8 @@
 .edit-title {
   text-align: center;
   padding: 20px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
 }
 
 .navbar-link {
@@ -199,4 +195,76 @@
 
 tr:nth-child(odd){
   background-color: lightgrey;
+}
+
+.login-container {
+  padding-top: 10px;
+  margin: 60px auto;
+  width: 500px;
+  height: 600px;
+  background-color: rgb(214, 211, 211);
+  /* box-shadow: 4px 8px rgb(187, 179, 179); */
+}
+
+.login-title {
+  font-size: 35px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+}
+
+.login-hr {
+  border: 1px solid grey;
+  width: 400px;
+}
+
+.field {
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.user-edit-field {
+  font-size: 15px;
+}
+
+.field label {
+  font-size: 15px;
+}
+
+.input-small {
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.additional-links {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.additional-links a {
+  text-decoration: none;
+  color: rgb(20, 61, 245);
+}
+
+.actions {
+  text-align: center;
+}
+
+.welcome-page {
+  background-color: rgb(214, 251, 214);
+  height: 1000px;
+  margin: none;
+}
+
+.welcome-title {
+  text-align: center;
+  padding: 30px;
+  font-size: 80px;
+  font-family: 'Cabin Sketch', cursive;
+  letter-spacing: 3px;
+  margin: 0;
 }
