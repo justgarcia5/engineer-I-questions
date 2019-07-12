@@ -1,34 +1,48 @@
-<div class="form">
-  <div class="form-field">
-    <%= form_for @contact do |f| %>
-      <% if @contact.errors.any? %>
-        <div class="errors-div">
-          <ul class="errors">
-            <% @contact.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
 
-      <div class="new-contact-card">
-        <%= f.label :name, 'Name: ', class: 'form-field-label' %>
-        <%= f.text_field :name, class: 'form-field w-input' %>
+<%= form_for @contact do |f| %>
+  <% if @contact.errors.any? %>
+    <div class="errors-div">
+      <ul class="errors">
+        <% @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="login-container">
+    <div class="form-container">
+    <% if @contact.user_id == current_user.id %>
+      <h1 class="new-contact-title">Edit Contact</h1>
+      <hr class="login-hr"></hr>
+    <% else %>
+      <h1 class="new-contact-title">New Contact</h1>
+      <hr class="login-hr"></hr>
+    <% end %>
+
+      <div class="field">
+        <%= f.label :name, 'Name' %><br/>
+        <%= f.text_field :name, class: "input-small" %>
         <br/>
+      </div>
 
-        <%= f.label :phone, 'Phone: ', class: 'form-field-label' %>
-        <%= f.text_field :phone, class: 'form-field w-input' %>
+      <div class="field">
+        <%= f.label :phone, 'Phone' %><br/>
+        <%= f.text_field :phone, class: "input-small" %>
         <br/>
+      </div>
 
-        <%= f.label :email, 'Email: ', class: 'form-field-label' %>
-        <%= f.text_field :email,  class: 'form-field w-input' %>
+      <div class="field">
+        <%= f.label :email, 'Email' %><br/>
+        <%= f.text_field :email,  class: "input-small" %>
         <br/>
+      </div>
 
+      <div class="actions">
         <%= f.submit 'Submit', class: 'btn-primary' %>
         <div>
           <%= link_to 'Back', contacts_path, class: "back-link"%>
         </div>
       </div>
-    <% end %>
+    </div>
   </div>
-</div>
+<% end %>
