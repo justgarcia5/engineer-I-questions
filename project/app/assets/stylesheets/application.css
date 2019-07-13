@@ -22,16 +22,31 @@
  margin: 20px;
 }
 
+#error_explanation {
+  border: 1px solid rgb(238, 169, 169);
+  background-color: rgb(238, 169, 169);
+  color: rgb(158, 5, 5);
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 18px;
+  text-align: left;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
 .errors {
   border: 1px solid rgb(238, 169, 169);
   background-color: rgb(238, 169, 169);
   color: rgb(158, 5, 5);
-  padding-top: 18px;
+  padding-top: 20px;
   width: 400px;
   margin: auto;
   padding-bottom: 18px;
   text-align: left;
-  font-size: 18px;
+  font-size: 12px;
   border-radius: 4px;
 }
 
@@ -44,6 +59,8 @@
   border-radius: 4px;
   font-size: 14px;
   padding: 6px 13px;
+  margin-top: 14px;
+  border-radius: 12px;
 }
 
 .btn-primary:hover {
@@ -57,10 +74,27 @@
   border-radius: 4px;
   font-size: 14px;
   padding: 6px 13px;
+  margin-top: 14px;
+  border-radius: 12px;
 }
 
 .btn-secondary:hover {
   background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-third {
+  background-color: rgb(193, 195, 197);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 13px;
+  margin-top: 14px;
+  border-radius: 12px;
+}
+
+.btn-third:hover {
+  background-color: rgb(83, 83, 85);
   color: white;
   cursor: pointer;
 }
@@ -201,8 +235,9 @@ tr:nth-child(odd){
   padding-top: 10px;
   margin: 60px auto;
   width: 500px;
-  height: 600px;
+  height: 660px;
   background-color: rgb(214, 211, 211);
+  /* margin-top: 0; */
   /* box-shadow: 4px 8px rgb(187, 179, 179); */
 }
 
@@ -256,13 +291,14 @@ tr:nth-child(odd){
 
 .welcome-page {
   background-color: rgb(214, 251, 214);
-  height: 1000px;
+  height: 900px;
   margin: none;
+  text-align: center;
 }
 
 .welcome-title {
-  text-align: center;
-  padding: 30px;
+  padding-top: 200px;
+  padding-bottom: 100px;
   font-size: 80px;
   font-family: 'Cabin Sketch', cursive;
   letter-spacing: 3px;

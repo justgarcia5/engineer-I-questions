@@ -11,13 +11,13 @@
   <% end %>
   <div class="login-container">
     <div class="form-container">
-    <% if @contact.user_id == current_user.id %>
-      <h1 class="new-contact-title">Edit Contact</h1>
-      <hr class="login-hr"></hr>
-    <% else %>
-      <h1 class="new-contact-title">New Contact</h1>
-      <hr class="login-hr"></hr>
-    <% end %>
+      <% if @contact.user_id == current_user.id %>
+        <h1 class="new-contact-title">Edit Contact</h1>
+        <hr class="login-hr"></hr>
+      <% else %>
+        <h1 class="new-contact-title">New Contact</h1>
+        <hr class="login-hr"></hr>
+      <% end %>
 
       <div class="field">
         <%= f.label :name, 'Name' %><br/>
@@ -39,7 +39,7 @@
 
       <div class="actions">
         <%= f.submit 'Submit', class: 'btn-primary' %>
-        <div>
+        <div class="additional-links">
           <%= link_to 'Back', contacts_path, class: "back-link"%>
         </div>
       </div>
