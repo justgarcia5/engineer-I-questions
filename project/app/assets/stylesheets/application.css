@@ -85,7 +85,7 @@
 }
 
 .btn-third {
-  background-color: rgb(193, 195, 197);
+  background-color: rgb(232, 237, 243);
   border-radius: 4px;
   font-size: 14px;
   padding: 6px 13px;
@@ -94,7 +94,7 @@
 }
 
 .btn-third:hover {
-  background-color: rgb(83, 83, 85);
+  background-color: rgb(105, 135, 165);
   color: white;
   cursor: pointer;
 }
@@ -111,8 +111,8 @@
 }
 
 .table-head {
-  background-color: green!important ;
-  color: white;
+  background-color: rgb(214, 251, 214)!important;
+  color: black;
 }
 
 .add-contact-link {
@@ -235,10 +235,8 @@ tr:nth-child(odd){
   padding-top: 10px;
   margin: 60px auto;
   width: 500px;
-  height: 660px;
+  height: 560px;
   background-color: rgb(214, 211, 211);
-  /* margin-top: 0; */
-  /* box-shadow: 4px 8px rgb(187, 179, 179); */
 }
 
 .login-title {
@@ -296,6 +294,13 @@ tr:nth-child(odd){
   text-align: center;
 }
 
+.welcome-page h2 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  margin-bottom: 6px;
+  margin-top: 30px;
+}
+
 .welcome-title {
   padding-top: 200px;
   padding-bottom: 100px;
@@ -303,4 +308,12 @@ tr:nth-child(odd){
   font-family: 'Cabin Sketch', cursive;
   letter-spacing: 3px;
   margin: 0;
+}
+
+.new-edit-user-container {
+  padding-top: 10px;
+  margin: 60px auto;
+  width: 500px;
+  height: 700px;
+  background-color: rgb(214, 211, 211);
 }
