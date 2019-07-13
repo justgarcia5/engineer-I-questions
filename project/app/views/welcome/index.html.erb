@@ -1,7 +1,9 @@
 <div class='welcome-page'>
   <h1 class='welcome-title'>Welcome to FriendBook!</h1>
-  <h2>Sign up today. It's free!</h2>
-    <%= button_to "Sign up",  new_user_registration_path, class: "btn-third" %>
-  <h2>Already have an account? Sign in!</h2>
+  <div>
+    <h2>Sign up today. It's free!</h2>
+    <%= button_to "Sign up",  new_user_registration_path, method: :get , class: "btn-third" %>
+    <h2>Already have an account? Sign in!</h2>
     <%= button_to "Login",  new_user_session_path, class: "btn-third" %>
+  </div>
 </div>

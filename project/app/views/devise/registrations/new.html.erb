@@ -7,6 +7,11 @@
       <hr class="login-hr"></hr>
 
       <div class="field">
+          <%= f.label :name %><br />
+          <%= f.text_field :name, autofocus: true, autocomplete: "email", class: "input-small" %>
+      </div>
+
+      <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input-small" %>
       </div>

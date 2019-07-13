@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable
+  validates :name, presence: true
 
   has_many :contacts
   # Include default devise modules. Others available are:

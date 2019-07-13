@@ -13,7 +13,7 @@
   <div class="navbar">
     <% if user_signed_in? %>
       <%= form_tag(search_page_path, method: :get, class: "input-group") do %>
-        <%= link_to "#{current_user.email}'s Contacts", contacts_path, class: "navbar-link" %>
+        <%= link_to "#{current_user.name}'s Contacts", contacts_path, class: "navbar-link" %>
         <%= link_to "Add contact", new_contact_path, class: "navbar-link" %>
         <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
