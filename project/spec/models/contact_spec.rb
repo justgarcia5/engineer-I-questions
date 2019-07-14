@@ -7,7 +7,7 @@ RSpec.describe Contact, type: :model do
     let(:user) { create_logged_in_user }
     let(:contact) { build(:contact, user: user) }
     context 'when all attributes supplied' do
-      it 'contact' do
+      it 'creates contact' do
         expect(contact).to be_valid
       end
     end

@@ -94,7 +94,7 @@
 }
 
 .btn-third:hover {
-  background-color: rgb(105, 135, 165);
+  background-color: rgb(107, 154, 200);
   color: white;
   cursor: pointer;
 }
@@ -289,7 +289,7 @@ tr:nth-child(odd){
 
 .welcome-page {
   background-color: rgb(214, 251, 214);
-  height: 900px;
+  height: 860px;
   margin: none;
   text-align: center;
 }
@@ -302,7 +302,7 @@ tr:nth-child(odd){
 }
 
 .welcome-title {
-  padding-top: 200px;
+  padding-top: 160px;
   padding-bottom: 100px;
   font-size: 80px;
   font-family: 'Cabin Sketch', cursive;
