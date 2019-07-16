@@ -2,11 +2,14 @@
 <%= form_for @contact do |f| %>
   <% if @contact.errors.any? %>
     <div class="errors-div">
-      <ul class="errors">
-        <% @contact.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+      <div class="errors">
+        <h2>1 error prohibited this user from being saved:</h2>
+        <ul>
+          <% @contact.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
   <div class="login-container">
