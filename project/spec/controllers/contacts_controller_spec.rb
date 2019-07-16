@@ -8,7 +8,7 @@ describe ContactsController, type: :controller do
     { name: "test", phone: "555-555-5555", email: "test@test.com"}
   }
 
-  it "create contact" do
+  it "creates contact" do
     expect{
       post :create, params: { contact: valid_item_attributes }
     }.to change(Contact, :count).by(1)

@@ -26,12 +26,9 @@
   border: 1px solid rgb(238, 169, 169);
   background-color: rgb(238, 169, 169);
   color: rgb(158, 5, 5);
-  padding-top: 20px;
-  padding-left: 18px;
-  padding-right: 18px;
-  width: 500px;
+  padding: 20px;
+  width: 460px;
   margin: auto;
-  padding-bottom: 18px;
   text-align: left;
   font-size: 12px;
   border-radius: 4px;
@@ -41,10 +38,9 @@
   border: 1px solid rgb(238, 169, 169);
   background-color: rgb(238, 169, 169);
   color: rgb(158, 5, 5);
-  padding-top: 20px;
-  width: 400px;
+  padding: 20px;
+  width: 460px;
   margin: auto;
-  padding-bottom: 18px;
   text-align: left;
   font-size: 12px;
   border-radius: 4px;
@@ -289,7 +285,7 @@ tr:nth-child(odd){
 
 .welcome-page {
   background-color: rgb(214, 251, 214);
-  height: 860px;
+  height: 900px;
   margin: none;
   text-align: center;
 }
@@ -316,4 +312,8 @@ tr:nth-child(odd){
   width: 500px;
   height: 700px;
   background-color: rgb(214, 211, 211);
+}
+
+.navbar-hr {
+  margin: 0;
 }
